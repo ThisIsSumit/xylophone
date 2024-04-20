@@ -3,21 +3,12 @@ import 'package:xylophone/home.dart';
 //import 'dart:ui';
 
 void main() {
-  runApp(MaterialApp(
-    home: Scaffold(
-      backgroundColor: const Color.fromARGB(232, 9, 245, 221),
-      appBar: AppBar(
-        backgroundColor: const Color.fromARGB(232, 14, 158, 144),
-        title: const Center(
-          child: Text(
-            "make some noice",
-            style: TextStyle(
-              color: Color.fromARGB(255, 255, 255, 255),
-            ),
-          ),
-        ),
+  runApp(
+    const MaterialApp(
+      home: Scaffold(
+        backgroundColor: Color.fromARGB(232, 0, 0, 0),
+        body: Home(),
       ),
-      body: const Home(),
     ),
-  ));
+  );
 }
