@@ -13,7 +13,7 @@ class HomeState extends State<Home> {
   Future<void> playSound(int soundnum) async {
     final player = AudioPlayer();
     await player.play(
-      AssetSource('note$soundnum.mov'),
+      AssetSource("note$soundnum.wav"),
     );
   }
 
@@ -22,9 +22,7 @@ class HomeState extends State<Home> {
       child: Container(
         color: color,
         child: TextButton(
-          onPressed: () {
-            playSound(colorNum);
-          },
+          onPressed: () => playSound(colorNum),
           child: const Text(""),
         ),
       ),
@@ -53,3 +51,4 @@ class HomeState extends State<Home> {
     );
   }
 }
+//flutter build apk --split-per-abi   
